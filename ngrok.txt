@@ -1,0 +1,19 @@
+3CYQ288ABY
+GRCDGA8PMK
+MU9Q5MNC5T
+FMG488K64Q
+TR7BCPNV37
+KHX8MNNGEH
+A42XCP33FQ
+T3F3CVVQH2
+A3VR7ZK3MA
+EADJPUV6G6
+
+https://143a-2406-7400-bb-6ba5-719b-6808-c020-b2ce.ngrok-free.app/api/staffcollecticase/auth/login
+
+
+ngrok config add-authtoken 2woYta2E93hdHllsB9v4bL2eYGr_6kt2Hd6qc5Y9kqBVokBWP
+
+ngrok http http://localhost:8080
+
+https://b60a-2406-7400-bb-c838-d962-4984-7d12-4c31.ngrok-free.app

@@ -1,0 +1,233 @@
+getGeneral - CALL
+
+curl --location 'http://localhost:8097/api/staffcollecticase/activity/getGeneral/?activityRemedyTypeCd=3970&activityTypeCd=3924&caseId=71046' \
+--header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJEZWZhdWx0IiwidXNlcklkIjoiMjAwMSIsInJvbGVJZCI6OTUsInNjb3BlcyI6InJlc2VhQ29uZmlndXJhdGlvbiIsImlhdCI6MTc0NjQzNDM0NiwiZXhwIjoxNzc3OTcwMzQ2fQ.o9vYnUN6TTPEGQzSp6OYeUj0kq5EyjIu7V76_tDGhJs' \
+--header 'Content-Type: application/json'
+
+
+{
+    "activityDate": "2025-05-08T18:30:00.000+00:00",
+    "activityTime": "12:00 AM",
+    "activityCaseCharacteristics": "Case created based on user request",
+    "activityClaimantRepresentative": 3933,
+    "activityHeaderName": "2nd Demand Letter - Alert: Research for Lien"
+}
+
+================
+METHOD DropDown - CALL
+
+curl --location 'http://localhost:8097/api/staffcollecticase/alv/list/598' \
+--header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJEZWZhdWx0IiwidXNlcklkIjoiMjAwMSIsInJvbGVJZCI6OTUsInNjb3BlcyI6InJlc2VhQ29uZmlndXJhdGlvbiIsImlhdCI6MTc0NjQzNDM0NiwiZXhwIjoxNzc3OTcwMzQ2fQ.o9vYnUN6TTPEGQzSp6OYeUj0kq5EyjIu7V76_tDGhJs' \
+--header 'Content-Type: application/json'
+
+[
+    {
+        "constId": 3594,
+        "constShortDesc": "US Mail"
+    },
+    {
+        "constId": 3595,
+        "constShortDesc": "Email"
+    },
+    {
+        "constId": 3596,
+        "constShortDesc": "Telephone"
+    },
+    {
+        "constId": 3597,
+        "constShortDesc": "Fax"
+    },
+    {
+        "constId": 3598,
+        "constShortDesc": "In person"
+    },
+    {
+        "constId": 3599,
+        "constShortDesc": "Video Conference"
+    },
+    {
+        "constId": 3600,
+        "constShortDesc": "Other"
+    },
+    {
+        "constId": 3601,
+        "constShortDesc": "Not Applicable"
+    },
+    {
+        "constId": 7010,
+        "constShortDesc": "Electronic"
+    }
+]
+
+================
+Sample 1 getFollowUpShortNote - CALL
+
+curl --location 'http://localhost:8097/api/staffcollecticase/activity/getFollowUpShortNote/?activityRemedyTypeCd=3970&activityTypeCd=3924' \
+--header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJEZWZhdWx0IiwidXNlcklkIjoiMjAwMSIsInJvbGVJZCI6OTUsInNjb3BlcyI6InJlc2VhQ29uZmlndXJhdGlvbiIsImlhdCI6MTc0NjQzNDM0NiwiZXhwIjoxNzc3OTcwMzQ2fQ.o9vYnUN6TTPEGQzSp6OYeUj0kq5EyjIu7V76_tDGhJs' \
+--header 'Content-Type: application/json'
+
+{
+    "activityFollowupDate": "2025-05-18T18:30:00.000+00:00",
+    "disableFollowupDate": false,
+    "activityFollowupShortNote": "Research Lien",
+    "disableFollowupShNote": false
+}
+
+Sample 2 getFollowUpShortNote - CALL
+
+curl --location 'http://localhost:8097/api/staffcollecticase/activity/getFollowUpShortNote/?activityRemedyTypeCd=3972&activityTypeCd=3893' \
+--header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJEZWZhdWx0IiwidXNlcklkIjoiMjAwMSIsInJvbGVJZCI6OTUsInNjb3BlcyI6InJlc2VhQ29uZmlndXJhdGlvbiIsImlhdCI6MTc0NjQzNDM0NiwiZXhwIjoxNzc3OTcwMzQ2fQ.o9vYnUN6TTPEGQzSp6OYeUj0kq5EyjIu7V76_tDGhJs' \
+--header 'Content-Type: application/json'
+
+{
+    "activityFollowupDate": "2025-05-22T18:30:00.000+00:00",
+    "disableFollowupDate": true,
+    "activityFollowupShortNote": "Submit IRORA",
+    "disableFollowupShNote": true
+}
+
+================
+ClaimantRep DropDown - CALL
+
+curl --location 'http://localhost:8097/api/staffcollecticase/alv/list/634' \
+--header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJEZWZhdWx0IiwidXNlcklkIjoiMjAwMSIsInJvbGVJZCI6OTUsInNjb3BlcyI6InJlc2VhQ29uZmlndXJhdGlvbiIsImlhdCI6MTc0NjQzNDM0NiwiZXhwIjoxNzc3OTcwMzQ2fQ.o9vYnUN6TTPEGQzSp6OYeUj0kq5EyjIu7V76_tDGhJs' \
+--header 'Content-Type: application/json'
+
+[
+    {
+        "constId": 3933,
+        "constShortDesc": "Self"
+    },
+    {
+        "constId": 3934,
+        "constShortDesc": "Attorney"
+    },
+    {
+        "constId": 3935,
+        "constShortDesc": "Other Representative"
+    }
+]
+================
+getEntityContact - CALL
+
+curl --location 'http://localhost:8097/api/staffcollecticase/activity/getEntityContact/?activityTypeCd=3910&caseId=71046' \
+--header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJEZWZhdWx0IiwidXNlcklkIjoiMjAwMSIsInJvbGVJZCI6OTUsInNjb3BlcyI6InJlc2VhQ29uZmlndXJhdGlvbiIsImlhdCI6MTc0NjQzNDM0NiwiZXhwIjoxNzc3OTcwMzQ2fQ.o9vYnUN6TTPEGQzSp6OYeUj0kq5EyjIu7V76_tDGhJs' \
+--header 'Content-Type: application/json'
+
+
+{
+    "disableEntityContact": true,
+    "entityList": [{
+        "activityEntityContact": 1234,
+        "activityEntityName": "EMP:WALMART INC"
+    },
+	{
+        "activityEntityContact": 2345,
+        "activityEntityName": "EMP:Burger King"
+    }]
+}
+================
+getPropertyLien - CALL
+
+curl --location 'http://localhost:8097/api/staffcollecticase/activity/getPropertyLien/?activityRemedyTypeCd=3970&caseId=71046' \
+--header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJEZWZhdWx0IiwidXNlcklkIjoiMjAwMSIsInJvbGVJZCI6OTUsInNjb3BlcyI6InJlc2VhQ29uZmlndXJhdGlvbiIsImlhdCI6MTc0NjQzNDM0NiwiZXhwIjoxNzc3OTcwMzQ2fQ.o9vYnUN6TTPEGQzSp6OYeUj0kq5EyjIu7V76_tDGhJs' \
+--header 'Content-Type: application/json'
+
+
+{
+    "countyCodesCtyList": [
+        {
+            "countyId": 65,
+            "countyName": "None"
+        },
+        {
+            "countyId": 64,
+            "countyName": "More Than One"
+        },
+        {
+            "countyId": 63,
+            "countyName": "NHothers"
+        },
+        {
+            "countyId": 11,
+            "countyName": "Default"
+        },
+        {
+            "countyId": 10,
+            "countyName": "Sullivan"
+        },
+        {
+            "countyId": 9,
+            "countyName": "Strafford"
+        },
+        {
+            "countyId": 8,
+            "countyName": "Rockingham"
+        },
+        {
+            "countyId": 7,
+            "countyName": "Merrimack"
+        },
+        {
+            "countyId": 6,
+            "countyName": "Hillsborough"
+        },
+        {
+            "countyId": 5,
+            "countyName": "Grafton"
+        },
+        {
+            "countyId": 4,
+            "countyName": "Coos"
+        },
+        {
+            "countyId": 3,
+            "countyName": "Cheshire"
+        },
+        {
+            "countyId": 2,
+            "countyName": "Carroll"
+        },
+        {
+            "countyId": 1,
+            "countyName": "Belknap"
+        }
+    ],
+    "propertyLien": 5
+}
+
+================
+getSendReSend - CALL
+
+curl --location 'http://localhost:8097/api/staffcollecticase/activity/getSendReSend/?activityRemedyTypeCd=3973&activityTypeCd=3910&caseId=71046' \
+--header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJEZWZhdWx0IiwidXNlcklkIjoiMjAwMSIsInJvbGVJZCI6OTUsInNjb3BlcyI6InJlc2VhQ29uZmlndXJhdGlvbiIsImlhdCI6MTc0NjQzNDM0NiwiZXhwIjoxNzc3OTcwMzQ2fQ.o9vYnUN6TTPEGQzSp6OYeUj0kq5EyjIu7V76_tDGhJs' \
+--header 'Content-Type: application/json'
+
+{
+    "sendNoticesCrcList": [
+        {
+            "remedyActivityCorrId": 33,
+            "remedyActivityCorrName": "NOTICE TO STOP WAGE GARNISHMENT",
+            "remedyActivityCorrEnable": "N",
+            "remedyActivityCorrAutoSet": "Y"
+        }
+    ],
+    "manualNoticesCrcList": [
+	{
+            "remedyActivityCorrId": 33,
+            "remedyActivityCorrName": "NOTICE TO STOP WAGE GARNISHMENT",
+            "remedyActivityCorrEnable": "N",
+            "remedyActivityCorrAutoSet": "Y"
+        }
+	],
+	"resendNoticesCrcList": [
+	{
+            "remedyActivityCorrId": 33,
+            "remedyActivityCorrName": "NOTICE TO STOP WAGE GARNISHMENT",
+            "remedyActivityCorrEnable": "N",
+            "remedyActivityCorrAutoSet": "Y"
+        }
+		]
+}
+
+================
