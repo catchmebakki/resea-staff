@@ -1,7 +1,7 @@
 getGeneral - CALL
 
 curl --location 'http://localhost:8097/api/staffcollecticase/activity/getGeneral/?activityRemedyTypeCd=3970&activityTypeCd=3924&caseId=71046' \
---header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJEZWZhdWx0IiwidXNlcklkIjoiMjAwMSIsInJvbGVJZCI6OTUsInNjb3BlcyI6InJlc2VhQ29uZmlndXJhdGlvbiIsImlhdCI6MTc0NjQzNDM0NiwiZXhwIjoxNzc3OTcwMzQ2fQ.o9vYnUN6TTPEGQzSp6OYeUj0kq5EyjIu7V76_tDGhJs' \
+--header 'Authorization: Bearer xxx' \
 --header 'Content-Type: application/json'
 
 
@@ -17,7 +17,7 @@ curl --location 'http://localhost:8097/api/staffcollecticase/activity/getGeneral
 METHOD DropDown - CALL
 
 curl --location 'http://localhost:8097/api/staffcollecticase/alv/list/598' \
---header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJEZWZhdWx0IiwidXNlcklkIjoiMjAwMSIsInJvbGVJZCI6OTUsInNjb3BlcyI6InJlc2VhQ29uZmlndXJhdGlvbiIsImlhdCI6MTc0NjQzNDM0NiwiZXhwIjoxNzc3OTcwMzQ2fQ.o9vYnUN6TTPEGQzSp6OYeUj0kq5EyjIu7V76_tDGhJs' \
+--header 'Authorization: Bearer xxx' \
 --header 'Content-Type: application/json'
 
 [
@@ -63,7 +63,7 @@ curl --location 'http://localhost:8097/api/staffcollecticase/alv/list/598' \
 Sample 1 getFollowUpShortNote - CALL
 
 curl --location 'http://localhost:8097/api/staffcollecticase/activity/getFollowUpShortNote/?activityRemedyTypeCd=3970&activityTypeCd=3924' \
---header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJEZWZhdWx0IiwidXNlcklkIjoiMjAwMSIsInJvbGVJZCI6OTUsInNjb3BlcyI6InJlc2VhQ29uZmlndXJhdGlvbiIsImlhdCI6MTc0NjQzNDM0NiwiZXhwIjoxNzc3OTcwMzQ2fQ.o9vYnUN6TTPEGQzSp6OYeUj0kq5EyjIu7V76_tDGhJs' \
+--header 'Authorization: Bearer xxx' \
 --header 'Content-Type: application/json'
 
 {
@@ -76,7 +76,7 @@ curl --location 'http://localhost:8097/api/staffcollecticase/activity/getFollowU
 Sample 2 getFollowUpShortNote - CALL
 
 curl --location 'http://localhost:8097/api/staffcollecticase/activity/getFollowUpShortNote/?activityRemedyTypeCd=3972&activityTypeCd=3893' \
---header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJEZWZhdWx0IiwidXNlcklkIjoiMjAwMSIsInJvbGVJZCI6OTUsInNjb3BlcyI6InJlc2VhQ29uZmlndXJhdGlvbiIsImlhdCI6MTc0NjQzNDM0NiwiZXhwIjoxNzc3OTcwMzQ2fQ.o9vYnUN6TTPEGQzSp6OYeUj0kq5EyjIu7V76_tDGhJs' \
+--header 'Authorization: Bearer xxx' \
 --header 'Content-Type: application/json'
 
 {
@@ -90,7 +90,7 @@ curl --location 'http://localhost:8097/api/staffcollecticase/activity/getFollowU
 ClaimantRep DropDown - CALL
 
 curl --location 'http://localhost:8097/api/staffcollecticase/alv/list/634' \
---header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJEZWZhdWx0IiwidXNlcklkIjoiMjAwMSIsInJvbGVJZCI6OTUsInNjb3BlcyI6InJlc2VhQ29uZmlndXJhdGlvbiIsImlhdCI6MTc0NjQzNDM0NiwiZXhwIjoxNzc3OTcwMzQ2fQ.o9vYnUN6TTPEGQzSp6OYeUj0kq5EyjIu7V76_tDGhJs' \
+--header 'Authorization: Bearer xxx' \
 --header 'Content-Type: application/json'
 
 [
@@ -111,7 +111,7 @@ curl --location 'http://localhost:8097/api/staffcollecticase/alv/list/634' \
 getEntityContact - CALL
 
 curl --location 'http://localhost:8097/api/staffcollecticase/activity/getEntityContact/?activityTypeCd=3910&caseId=71046' \
---header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJEZWZhdWx0IiwidXNlcklkIjoiMjAwMSIsInJvbGVJZCI6OTUsInNjb3BlcyI6InJlc2VhQ29uZmlndXJhdGlvbiIsImlhdCI6MTc0NjQzNDM0NiwiZXhwIjoxNzc3OTcwMzQ2fQ.o9vYnUN6TTPEGQzSp6OYeUj0kq5EyjIu7V76_tDGhJs' \
+--header 'Authorization: Bearer xxx' \
 --header 'Content-Type: application/json'
 
 
@@ -130,7 +130,7 @@ curl --location 'http://localhost:8097/api/staffcollecticase/activity/getEntityC
 getPropertyLien - CALL
 
 curl --location 'http://localhost:8097/api/staffcollecticase/activity/getPropertyLien/?activityRemedyTypeCd=3970&caseId=71046' \
---header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJEZWZhdWx0IiwidXNlcklkIjoiMjAwMSIsInJvbGVJZCI6OTUsInNjb3BlcyI6InJlc2VhQ29uZmlndXJhdGlvbiIsImlhdCI6MTc0NjQzNDM0NiwiZXhwIjoxNzc3OTcwMzQ2fQ.o9vYnUN6TTPEGQzSp6OYeUj0kq5EyjIu7V76_tDGhJs' \
+--header 'Authorization: Bearer xxx' \
 --header 'Content-Type: application/json'
 
 
@@ -200,7 +200,7 @@ curl --location 'http://localhost:8097/api/staffcollecticase/activity/getPropert
 getSendReSend - CALL
 
 curl --location 'http://localhost:8097/api/staffcollecticase/activity/getSendReSend/?activityRemedyTypeCd=3973&activityTypeCd=3910&caseId=71046' \
---header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJEZWZhdWx0IiwidXNlcklkIjoiMjAwMSIsInJvbGVJZCI6OTUsInNjb3BlcyI6InJlc2VhQ29uZmlndXJhdGlvbiIsImlhdCI6MTc0NjQzNDM0NiwiZXhwIjoxNzc3OTcwMzQ2fQ.o9vYnUN6TTPEGQzSp6OYeUj0kq5EyjIu7V76_tDGhJs' \
+--header 'Authorization: Bearer xxx' \
 --header 'Content-Type: application/json'
 
 {
